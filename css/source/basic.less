@@ -1,0 +1,325 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+html,
+body{
+	width: 100%;
+	height: 100%;
+	font-family: 'Champagne & Limousines' !important;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+.bebas{font-family: 'Bebas Neue';}
+
+//=========================================================
+#tmain {
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+
+#theader{
+    display: table-header-group;
+    //background-color:coral;
+}
+
+#tbody{
+    display: table-row-group;
+    //background-color:lightgreen;
+    height: 60px;
+}
+
+#tfooter {
+    display: table-footer-group;
+    //background-image: url("../../ally-assets/footer.jpg");
+    background-size: cover;
+}
+
+.header-section{
+//background-color: blue;
+//height: 80px;
+vertical-align:middle;
+display: table-cell;
+//padding-top:16px;
+}
+
+.body-section{
+    //background-color: red;
+    //display: table-cell-group;
+    //vertical-align:middle;
+    min-height: 100px;
+    padding-bottom: 16px;
+}
+
+.footer-section{
+background-color: @blue3;
+height: 42px;
+vertical-align:bottom;
+display: table-cell;
+color: white;
+vertical-align:middle;
+//padding:16px;
+	p{
+		display: inline;
+		padding-left: 8px;
+		vertical-align:middle;
+		padding-top: 8px;
+	}
+	a{
+		padding-left: 12px;
+		padding-top: 8px;
+	}
+}
+
+.body-content{
+//background-color: white;
+}
+
+.body-vertical{
+    //background-color: red;
+    display: table-cell;
+    vertical-align:middle;
+    min-height: 160px;
+}
+//=============================================
+
+.navbar-collapse{
+	padding: 0px;
+	background-color: @blue3;
+}
+
+.navbar{
+	border: 0px;
+	margin-bottom: 0px;
+}
+
+.collapsed{
+	.icon-bar{background-color: @blue2 !important;}
+}
+
+.container{
+	background-color: white;
+}
+
+.italic{font-style: italic;}
+.bold{font-weight: bold;}
+.bold-italic{
+	font-style: italic;
+	font-weight: bold;
+}
+.blue1{ color: @blue1;}
+.blue2{ color: @blue2;}
+
+.gray-back{background-color: @grey1;}
+.green-back{background-color: @green1}
+
+.rem2x{ font-size: 2rem;}
+.padding8{padding: 8px;}
+.padding8h{padding-left: 8px; padding-right: 8px;}
+.padding16{padding: 16px;}
+.padding16h{padding-left: 16px; padding-right: 16px;}
+.padding16v{padding-top: 16px; padding-bottom: 16px;}
+
+.margin16{margin: 16px;}
+.margin16h{margin-left: 16px; margin-right: 16px;}
+.margin16v{margin-top: 16px; margin-bottom: 16px;}
+.margin0{margin: 0px;}
+
+.center-block{	margin-left: auto; margin-right: auto;}
+
+.site-wrapper {
+  display: table;
+  //width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+	.site-wrapper-inner {
+	  display: table-row;
+	  vertical-align: middle;
+	  text-align: center;
+	}
+ 
+	.site-wrapper-top {
+	  display: table-cell;
+	  vertical-align:top;
+	  text-align: center;
+	}
+	.site-wrapper-bottom {
+	  display: table-row;
+	  vertical-align:bottom;
+	  text-align: center;
+	}
+}
+
+.ally-menu{
+	max-width: 740px;
+	float: none;
+	margin: 0px auto;
+	a{
+		color: white !important;
+	}
+	li{
+		&:hover,
+		&.active{
+			a{
+				background-color: #ffffff !important;
+				color: @blue2 !important;
+			}
+		}
+	}
+}
+
+.us-menu{
+	list-style: none;
+	margin-bottom: 0px;
+	li{
+		padding: 8px 16px;
+		border-bottom: solid @grey2 1px;
+		display: inline-block;
+		&:hover,
+		&.active{
+			border-bottom: solid @blue1 1px;
+			a{
+				color: @blue1 !important;
+				text-decoration: none;
+			}
+
+		}
+		a{color: @grey2 !important;}
+	}
+	li:last-child{
+		//border-bottom: none;
+	}
+}
+
+.circle-price{
+	width: 100px;
+	height: 100px;
+	background-color: @blue1;
+	color: white;
+	border-radius: 50px;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	font-weight: bold;
+}
+
+.ul-plus{
+	li{
+		list-style-image: url(../../ally-assets/plus.png);
+	}
+}
+
+.div-areas{
+	margin-top: 8px;
+	color: @blue2;
+	width: 100%;
+	text-align: center;
+	span{
+		padding: 8px;
+	}
+}
+
+.form-style{
+	background-color: @blue2;
+	//background-image: url(../ally-assets/ornament01.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 16px;
+	color: white;
+	p{
+		color: white;
+	}
+	h3{
+		font-weight: bold;
+		text-align: center;
+		color: white;
+		padding: 8px;
+		margin: -15px -15px 15px -15px;
+		//background-image: url(../ally-assets/ornament03.jpg);
+		background-color: @blue1;
+	}
+}
+
+.ornament{
+	background-image: url(../ally-assets/ornament03.jpg);
+	background-size: cover;
+	width: 100%;
+	color: white;
+	padding: 16px;
+}
+
+#exampleTextarea{
+	resize: none;
+}
+
+.accordion2col{
+	padding-right: 0px ;
+	padding-left: 0px ;
+	margin-top: 5px;
+}
+
+.buscador_grupo{
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+	.est_buscador{
+	width: 210px;
+	height: 40px;
+	background-color: @blue1;
+	border-radius: 0 25px 25px 0;
+	border: none;
+	color: white;
+	margin-left: -4px;
+	margin-top: -4px;
+	outline: none;
+	font-size: 1.5rem;
+	}
+	.icon_buscador{
+		background-color: @blue1;
+		border-radius: 25px 0 0 25px;
+		color: white;
+		padding: 12px 12px 0px 12px;
+		height: 40px;
+	}
+}
+
+.panel-ally{
+	border-radius: 20px !important;
+	a{text-decoration: none; color: @blue2; font-weight: bolder;}
+	background-color: @blue4;
+	.panel-heading h4 .glyphicon{color: @blue1; font-size: 1.5rem; background-color: white; border-radius: 15px;}
+	.panel-body{ background-color: white;}
+}
+
+.titulo-seccion{
+	float: right;
+	background-color: @blue3;
+	padding: 0px 10px 8px 10px;
+	border-radius: 5px;
+	color: white;
+	text-align: center;
+}
+
+@media (min-width: 993px) {
+	.accordion2col{
+		width: 49%;
+		margin-left: 1% ;
+	}
+}
+
+@media (max-width: 767px) {
+	.logo{
+		width: 70px;
+		padding: 8px;
+	}
+
+	.titulo-seccion{
+		float: none;
+		margin-right: auto;
+		margin-left: auto;
+		padding-top: 1px;
+	}
+}
